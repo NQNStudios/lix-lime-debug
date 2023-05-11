@@ -27,4 +27,7 @@ jobs:
       
       # run target test:
       - run: lix download
+      - run: ./copy-files.sh
+        shell: bash
+        if: matrix.os == 'windows-latest'
       - run: lix run lime
