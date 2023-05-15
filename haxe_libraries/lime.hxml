@@ -1,6 +1,6 @@
-# @install: lix --silent download "gh://github.com/nqnstudios/lime#98a02fb5bf76ecf41a2d64d1d5e618a9caf89afc" into lime/8.0.1/github/98a02fb5bf76ecf41a2d64d1d5e618a9caf89afc
-# @run: haxelib run-dir lime "${HAXE_LIBCACHE}/lime/8.0.1/github/98a02fb5bf76ecf41a2d64d1d5e618a9caf89afc"
--cp ${HAXE_LIBCACHE}/lime/8.0.1/github/98a02fb5bf76ecf41a2d64d1d5e618a9caf89afc/src
+# @install: lix --silent download "gh://github.com/nqnstudios/lime#c29b00a56e0c9bb425e6d9b275d61f7017e6dd45" into lime/8.0.1/github/c29b00a56e0c9bb425e6d9b275d61f7017e6dd45
+# @run: haxelib run-dir lime "${HAXE_LIBCACHE}/lime/8.0.1/github/c29b00a56e0c9bb425e6d9b275d61f7017e6dd45"
+-cp ${HAXE_LIBCACHE}/lime/8.0.1/github/c29b00a56e0c9bb425e6d9b275d61f7017e6dd45/src
 -D lime=8.0.1
 --macro lime._internal.macros.DefineMacro.run()
--lib ndll:${HAXE_LIBCACHE}/lime/8.0.1/github/98a02fb5bf76ecf41a2d64d1d5e618a9caf89afc/ndll/
+-lib ndll:${HAXE_LIBCACHE}/lime/8.0.1/github/c29b00a56e0c9bb425e6d9b275d61f7017e6dd45/ndll/
