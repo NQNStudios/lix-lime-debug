@@ -25,6 +25,8 @@ jobs:
       
       # run target test:
       - run: lix download
+      - run: haxelib install format
+      - run: haxelib install hxp
       - run: lix install haxe 4.2.5
       - run: lix use haxe 4.2.5
       - run: lix run lime
