@@ -1,4 +1,0 @@
-# @install: lix --silent download "haxelib:/hxp#1.2.2" into hxp/1.2.2/haxelib
-# @run: haxelib run-dir hxp "${HAXE_LIBCACHE}/hxp/1.2.2/haxelib"
--cp ${HAXE_LIBCACHE}/hxp/1.2.2/haxelib/src
--D hxp=1.2.2
