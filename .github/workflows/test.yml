@@ -25,6 +25,7 @@ jobs:
       
       # run target test:
       - run: lix download
+      - run: lix install haxe 4.2.5
       - run: lix use haxe 4.2.5
       - run: lix run lime
       - run: lix use haxe 4.3.1
