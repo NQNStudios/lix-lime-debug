@@ -27,9 +27,9 @@ jobs:
 
 
       # run target test:
-      - run: ls "C:/Users/runneradmin/AppData/Roaming/haxe/haxe_libraries"
-        if: matrix.os == 'windows-latest'
       - run: lix install gh:nqnstudios/lime#lix-workaround
         if: matrix.os == 'windows-latest'
       - run: lix download
+      - run: ls "C:/Users/runneradmin/AppData/Roaming/haxe/haxe_libraries"
+        if: matrix.os == 'windows-latest'
       - run: lix run lime
