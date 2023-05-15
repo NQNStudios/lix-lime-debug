@@ -15,6 +15,9 @@ jobs:
     env:
       CI_OS_NAME: ${{ matrix.os }}
     steps:
+      - run: '@echo %APPDATA%'
+        if: matrix.os == 'windows-latest'
+        shell: cmd
       - uses: actions/checkout@v3
 
       # lix
@@ -24,8 +27,6 @@ jobs:
 
 
       # run target test:
-      - run: '@echo %APPDATA%'
-        if: matrix.os == 'windows-latest'
       - run: ls "C:/Users/runneradmin/AppData/Roaming/haxe/haxe_libraries"
         if: matrix.os == 'windows-latest'
       - run: lix install gh:nqnstudios/lime#lix-workaround
