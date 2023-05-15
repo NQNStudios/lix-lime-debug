@@ -14,6 +14,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       CI_OS_NAME: ${{ matrix.os }}
+      LIME_PATH: /Users/runner/haxe/haxe_libraries/lime/8.0.1/github/c85632bee6fd7d1873d9d5205a744e488c608af6
     steps:
       - uses: actions/checkout@v3
 
